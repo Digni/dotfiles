@@ -50,6 +50,10 @@ automatically-unhide-macos-hidden-apps = false
   run = ['layout floating' ]
 
 [[on-window-detected]]
+  if.app-name-regex-substring = 'activity monitor'
+  run = ['layout floating' ]
+
+[[on-window-detected]]
   if.app-id="com.mitchellh.ghostty"
   run= [ 'layout floating']
 
@@ -60,6 +64,11 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
   if.app-name-regex-substring = 'bitwarden'
   run = [ 'layout floating']
+
+[[on-window-detected]]
+  if.app-name-regex-substring = 'Arc'
+  run = [ 'move-node-to-workspace 2']
+
 # Possible values: (qwerty|dvorak|colemak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
