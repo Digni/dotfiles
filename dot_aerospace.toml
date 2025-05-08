@@ -77,6 +77,14 @@ automatically-unhide-macos-hidden-apps = false
   if.app-id="com.readdle.SparkDesktop"
   run= [ 'move-node-to-workspace 1']
 
+[[on-window-detected]]
+  if.app-id="md.obsidian"
+  run= [ 'move-node-to-workspace 10']
+
+[[on-window-detected]]
+  if.app-id="com.apple.music"
+  run= [ 'move-node-to-workspace 10']
+
 # Possible values: (qwerty|dvorak|colemak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
