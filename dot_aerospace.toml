@@ -69,6 +69,14 @@ automatically-unhide-macos-hidden-apps = false
   if.app-name-regex-substring = 'Arc'
   run = [ 'move-node-to-workspace 2']
 
+[[on-window-detected]]
+  if.app-name-regex-substring = 'messages'
+  run = [ 'move-node-to-workspace 2']
+
+[[on-window-detected]]
+  if.app-id="com.readdle.SparkDesktop"
+  run= [ 'move-node-to-workspace 1']
+
 # Possible values: (qwerty|dvorak|colemak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
