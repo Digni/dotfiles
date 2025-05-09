@@ -82,7 +82,7 @@ automatically-unhide-macos-hidden-apps = false
   run = [ 'move-node-to-workspace 10']
 
 [[on-window-detected]]
-  if.app-id="com.apple.music"
+  if.app-id="com.apple.Music"
   run = [ 'move-node-to-workspace 10']
 
 [[on-window-detected]]
