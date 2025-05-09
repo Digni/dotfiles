@@ -86,15 +86,15 @@ automatically-unhide-macos-hidden-apps = false
   run = [ 'move-node-to-workspace 10']
 
 [[on-window-detected]]
-  if.app-id="Mattermost.Desktop"
+  if.app-id='Mattermost.Desktop'
   run = [ 'move-node-to-workspace 5']
 
 [[on-window-detected]]
-  if.app-name-regex-substring = 'Discord'
+  if.app-id='com.hnc.Discord'
   run = [ 'move-node-to-workspace 5']
 
 [[on-window-detected]]
-  if.app-id="com.microsoft.teams2"
+  if.app-id='com.microsoft.teams2'
   run = [ 'move-node-to-workspace 5']
 
 # Possible values: (qwerty|dvorak|colemak)
