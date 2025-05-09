@@ -78,11 +78,12 @@ automatically-unhide-macos-hidden-apps = false
   run = [ 'move-node-to-workspace 1']
 
 [[on-window-detected]]
-  if.app-id="md.obsidian"
+  if.app-id='md.obsidian'
   run = [ 'move-node-to-workspace 10']
 
 [[on-window-detected]]
-  if.app-name-regex-substring = 'Music'
+  if.app-id='com.apple.Music'
+#if.app-name-regex-substring = 'Music'
   run = [ 'move-node-to-workspace 10']
 
 [[on-window-detected]]
