@@ -225,7 +225,7 @@ automatically-unhide-macos-hidden-apps = false
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     alt-shift-semicolon = [
       'mode service',
-      'exec-and-forget sketchybar --trigger aerospace_enter_sevice_mode',
+      'exec-and-forget sketchybar --trigger aerospace_enter_service_mode',
     ]
 
 # 'service' binding mode declaration.
