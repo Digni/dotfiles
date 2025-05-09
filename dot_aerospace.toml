@@ -71,23 +71,23 @@ automatically-unhide-macos-hidden-apps = false
 
 [[on-window-detected]]
   if.app-name-regex-substring = 'messages'
-  run = [ 'move-node-to-workspace 2']
+  run = [ 'move-node-to-workspace 1']
 
 [[on-window-detected]]
   if.app-id="com.readdle.SparkDesktop"
-  run= [ 'move-node-to-workspace 1']
+  run = [ 'move-node-to-workspace 1']
 
 [[on-window-detected]]
   if.app-id="md.obsidian"
-  run= [ 'move-node-to-workspace 10']
+  run = [ 'move-node-to-workspace 10']
 
 [[on-window-detected]]
   if.app-id="com.apple.music"
-  run= [ 'move-node-to-workspace 10']
+  run = [ 'move-node-to-workspace 10']
 
 [[on-window-detected]]
   if.app-id="Mattermost.Desktop"
-  run= [ 'move-node-to-workspace 5']
+  run = [ 'move-node-to-workspace 5']
 
 # Possible values: (qwerty|dvorak|colemak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
