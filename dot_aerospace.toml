@@ -90,7 +90,7 @@ automatically-unhide-macos-hidden-apps = false
   run = [ 'move-node-to-workspace 5']
 
 [[on-window-detected]]
-  if.app-id="com.hnc.Discord"
+  if.app-name-regex-substring = 'Discord'
   run = [ 'move-node-to-workspace 5']
 
 [[on-window-detected]]
