@@ -258,4 +258,5 @@ automatically-unhide-macos-hidden-apps = false
     shift-down = ['volume set 0', 'mode main']
 
 [workspace-to-monitor-force-assignment]
+    9 =  ['one']
     10 = ['secondary', 'LG HDR 4K']
