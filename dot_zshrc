@@ -126,3 +126,5 @@ source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+
+export PATH="$HOME/.local/bin:$PATH"
