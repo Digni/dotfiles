@@ -111,8 +111,6 @@ source $(brew --prefix nvm)/nvm.sh
 
 eval "$(starship init zsh)"
 
-# Added by Windsurf
-export PATH="/Users/fabianfreimuller/.codeium/windsurf/bin:$PATH"
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/fabianfreimuller/.docker/completions $fpath)
 autoload -Uz compinit
