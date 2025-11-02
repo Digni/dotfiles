@@ -126,3 +126,6 @@ source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 source <(fzf --zsh)
 
 export PATH="$HOME/.local/bin:$PATH"
+
+# opencode
+export PATH=/Users/fabianfreimuller/.opencode/bin:$PATH
