@@ -93,7 +93,7 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
   if.app-id='com.apple.Music'
 #if.app-name-regex-substring = 'Music'
-  run = [ 'move-node-to-workspace 10']
+  run = [ 'layout floating' ]
 
 [[on-window-detected]]
   if.app-id='Mattermost.Desktop'
