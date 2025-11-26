@@ -133,3 +133,6 @@ export PATH=/Users/fabianfreimuller/.opencode/bin:$PATH
 # Added by get-aspire-cli.sh
 export PATH="$HOME/.aspire/bin:$PATH"
 
+
+# Added by Antigravity
+export PATH="/Users/fabianfreimuller/.antigravity/antigravity/bin:$PATH"
