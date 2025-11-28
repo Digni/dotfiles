@@ -7,6 +7,11 @@ return {
 		-- refer to the configuration section below
 		spec = {
 			{ "<leader>a", group = "ai" },
+			{ "<leader>d", group = "debug" },
+			{ "<leader>dt", desc = "Toggle Breakpoint" },
+			{ "<leader>dc", desc = "Continue" },
+			{ "<leader>dr", desc = "Restart" },
+			{ "<leader>dq", desc = "Quit/Terminate" },
 			{ "gd", desc = "Go to defintion" },
 			{ "gD", desc = "Go to declaration" },
 		},
