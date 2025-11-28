@@ -63,6 +63,45 @@ return {
 					args = {},
 				},
 			}
+
+			-- Go debugging with Delve
+			dap.adapters.delve = {
+				type = "server",
+				port = "${port}",
+				executable = {
+					command = vim.fn.expand("~/.local/share/nvim/mason/bin/dlv"),
+					args = { "dap", "-l", "127.0.0.1:${port}" },
+				},
+			}
+
+			dap.configurations.go = {
+				{
+					type = "delve",
+					name = "Debug",
+					request = "launch",
+					program = "${file}",
+				},
+				{
+					type = "delve",
+					name = "Debug (main package)",
+					request = "launch",
+					program = "${workspaceFolder}",
+				},
+				{
+					type = "delve",
+					name = "Debug test",
+					request = "launch",
+					mode = "test",
+					program = "${file}",
+				},
+				{
+					type = "delve",
+					name = "Debug test (go.mod)",
+					request = "launch",
+					mode = "test",
+					program = "./${relativeFileDirname}",
+				},
+			}
 		end,
 	},
 	{
