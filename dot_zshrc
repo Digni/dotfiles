@@ -1,4 +1,4 @@
-# If you come from bash you might have to change your $PATH.
+
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -136,4 +136,4 @@ export PATH="$HOME/.aspire/bin:$PATH"
 
 # Added by Antigravity
 export PATH="/Users/fabianfreimuller/.antigravity/antigravity/bin:$PATH"
-eval "$(zellij setup --enerate-auto-start zsh)"
+eval "$(zellij setup --generate-auto-start zsh)"
