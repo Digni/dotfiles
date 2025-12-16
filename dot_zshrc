@@ -136,3 +136,7 @@ export PATH="$HOME/.aspire/bin:$PATH"
 
 # Added by Antigravity
 export PATH="/Users/fabianfreimuller/.antigravity/antigravity/bin:$PATH"
+
+alias vim="nvim"
+alias vi="nvim"
+alias oldvim="vim"
