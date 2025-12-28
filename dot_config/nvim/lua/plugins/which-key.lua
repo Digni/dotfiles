@@ -12,6 +12,7 @@ return {
 			{ "<leader>dc", desc = "Continue" },
 			{ "<leader>dr", desc = "Restart" },
 			{ "<leader>dq", desc = "Quit/Terminate" },
+			{ "<leader>w", desc = "Save/Write Buffer" },
 			{ "gd", desc = "Go to defintion" },
 			{ "gD", desc = "Go to declaration" },
 		},
