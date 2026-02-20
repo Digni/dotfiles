@@ -1,3 +1,10 @@
+# OPENSPEC:START
+# OpenSpec shell completions configuration
+fpath=("/Users/fabianfreimuller/.oh-my-zsh/custom/completions" $fpath)
+autoload -Uz compinit
+compinit
+# OPENSPEC:END
+
 
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -143,3 +150,5 @@ export PATH="$PATH:/Users/fabianfreimuller/.dotnet/tools"
 alias vim="nvim"
 alias vi="nvim"
 alias oldvim="vim"
+
+export PATH="$PATH:"
