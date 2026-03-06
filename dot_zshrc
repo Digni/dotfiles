@@ -151,4 +151,6 @@ alias vim="nvim"
 alias vi="nvim"
 alias oldvim="vim"
 
-export PATH="$PATH:"
+export PATH="$PATH:$HOME/go/bin"
+
+if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
