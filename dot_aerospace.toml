@@ -96,16 +96,24 @@ automatically-unhide-macos-hidden-apps = false
   run = [ 'move-node-to-workspace 10' ]
 
 [[on-window-detected]]
+  if.app-id='dev.kdrag0n.MacVirt'
+  run = [ 'move-node-to-workspace 9']
+
+[[on-window-detected]]
+  if.app-id='io.rize'
+  run = [ 'move-node-to-workspace 9']
+
+[[on-window-detected]]
   if.app-id='Mattermost.Desktop'
-  run = [ 'move-node-to-workspace 5']
+  run = [ 'move-node-to-workspace 6']
 
 [[on-window-detected]]
   if.app-id='com.hnc.Discord'
-  run = [ 'move-node-to-workspace 5']
+  run = [ 'move-node-to-workspace 6']
 
 [[on-window-detected]]
   if.app-id='com.microsoft.teams2'
-  run = [ 'move-node-to-workspace 5']
+  run = [ 'move-node-to-workspace 6']
 
 [[on-window-detected]]
   if.app-id='com.flexibits.fantastical2.mac'
