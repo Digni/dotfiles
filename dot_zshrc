@@ -154,3 +154,13 @@ alias oldvim="vim"
 export PATH="$PATH:$HOME/go/bin"
 
 if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
+
+# working with beads for agent tracking
+beads-project() {
+  export BEADS_DIR=~/Development/beads-state/$1/.beads
+  if [ ! -d "$BEADS_DIR" ]; then
+    mkdir -p "$(dirname $BEADS_DIR)"
+    bd init --stealth --prefix "$1"
+  fi
+  echo "Beads: $BEADS_DIR"
+}
