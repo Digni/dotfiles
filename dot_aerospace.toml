@@ -261,6 +261,17 @@ automatically-unhide-macos-hidden-apps = false
       'exec-and-forget sketchybar --trigger aerospace_enter_service_mode',
     ]
 
+    # Workspaces 11-20: press the mode key, then a digit (1 -> 11, ..., 0 -> 20)
+    alt-m = [
+      'mode workspace2',
+      'exec-and-forget sketchybar --trigger aerospace_enter_workspace_mode',
+    ]
+
+    alt-shift-m = [
+      'mode move2',
+      'exec-and-forget sketchybar --trigger aerospace_enter_move_mode',
+    ]
+
     alt-shift-f = 'layout floating tiling'
 
 # 'service' binding mode declaration.
@@ -269,7 +280,7 @@ automatically-unhide-macos-hidden-apps = false
     esc = [
       'reload-config', 
       'mode main',
-      'exec-and-forget sketchybar --trigger aerospace_leave_service_mode',
+      'exec-and-forget sketchybar --trigger aerospace_leave_mode',
     ]
     r = ['flatten-workspace-tree', 'mode main'] # reset layout
     f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
@@ -286,6 +297,34 @@ automatically-unhide-macos-hidden-apps = false
     down = 'volume down'
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
+
+# Focus workspaces 11-20
+[mode.workspace2.binding]
+    esc = ['mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode']
+    1 = ['workspace 11', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode']
+    2 = ['workspace 12', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode']
+    3 = ['workspace 13', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode']
+    4 = ['workspace 14', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode']
+    5 = ['workspace 15', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode']
+    6 = ['workspace 16', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode']
+    7 = ['workspace 17', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode']
+    8 = ['workspace 18', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode']
+    9 = ['workspace 19', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode']
+    0 = ['workspace 20', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode']
+
+# Move the focused window to workspaces 11-20
+[mode.move2.binding]
+    esc = ['mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode']
+    1 = ['move-node-to-workspace 11', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode', 'exec-and-forget sketchybar --trigger aerospace_focus_change']
+    2 = ['move-node-to-workspace 12', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode', 'exec-and-forget sketchybar --trigger aerospace_focus_change']
+    3 = ['move-node-to-workspace 13', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode', 'exec-and-forget sketchybar --trigger aerospace_focus_change']
+    4 = ['move-node-to-workspace 14', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode', 'exec-and-forget sketchybar --trigger aerospace_focus_change']
+    5 = ['move-node-to-workspace 15', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode', 'exec-and-forget sketchybar --trigger aerospace_focus_change']
+    6 = ['move-node-to-workspace 16', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode', 'exec-and-forget sketchybar --trigger aerospace_focus_change']
+    7 = ['move-node-to-workspace 17', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode', 'exec-and-forget sketchybar --trigger aerospace_focus_change']
+    8 = ['move-node-to-workspace 18', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode', 'exec-and-forget sketchybar --trigger aerospace_focus_change']
+    9 = ['move-node-to-workspace 19', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode', 'exec-and-forget sketchybar --trigger aerospace_focus_change']
+    0 = ['move-node-to-workspace 20', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_leave_mode', 'exec-and-forget sketchybar --trigger aerospace_focus_change']
 
 [workspace-to-monitor-force-assignment]
     8 =  ['built-in']
